@@ -1,0 +1,112 @@
+/* Novell Engine web-site styles-framework */
+
+
+/* Width */
+::-webkit-scrollbar {
+   width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #adadad;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #333333;
+   border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #262626;
+}
+
+::selection {
+   background: white; /* Цвет фона */
+   color: black; /* Цвет текста */
+}
+
+.unselectable {
+   -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none;   /* Chrome/Safari/Opera */
+   -khtml-user-select: none;    /* Konqueror */
+   -moz-user-select: none;      /* Firefox */
+   -ms-user-select: none;       /* Internet Explorer/Edge */
+   user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+br {
+   user-select: none;
+}
+
+p a {
+   user-select: none;
+   color: white;
+   display: inline-block;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin: 15px 25px;
+   padding: 15px 20px;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: 'Montserrat', sans-serif;
+   -webkit-transition: 0.4s ease-in-out;
+   -o-transition: 0.4s ease-in-out;
+   transition: 0.4s ease-in-out;
+}
+
+.five  a{
+   border-radius: 30px;
+   color: white;
+   box-shadow: inset 0 -5px 0 #ababab;
+
+}
+
+.five a:hover {
+   box-shadow: inset 0 -70px 0 white, 1px 1px 6px rgba(0, 0, 0, 0.3);
+   color: black;
+}
+
+
+body{
+   text-shadow: 0px 0px 27px #0000ff;
+   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+   background: no-repeat url("../res/main_bg.gif");
+   background-color: black;
+   color: white;
+   -moz-background-size: 100%; /* Firefox 3.6+ */
+   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+   -o-background-size: 100%; /* Opera 9.6+ */
+   background-size: 100%; /* Современные браузеры */
+}
+
+p {
+   font-family: Verdana, Arial, Helvetica, sans-serif; 
+   font-size: 13pt; /* Размер шрифта в пунктах */ 
+}
+
+#subtitle{
+   text-shadow: 5px 0px 17px #9202eb;
+   font-size: 19px;
+}
+
+.content{
+   text-shadow: 5px 0px 15px #fc8894;
+   text-align: center;	
+}
+
+#title{
+   float: top;
+   margin:0px 15% 0px 15%;
+}
+
+.stat{
+   position: relative;
+   margin:18% 0px 0px 0px;
+}
+
+
+
