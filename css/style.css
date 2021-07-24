@@ -59,61 +59,66 @@ p a {
 }
 
 .btn a{
-   display: inline-block;
-   text-decoration: none;
    text-transform: uppercase;
    letter-spacing: 1px;
-   margin: 15px 25px;
-   padding: 15px 20px;
-   font-size: 20px;
    font-weight: bold;
-   font-family: 'Montserrat', sans-serif;
    -webkit-transition: 0.4s ease-in-out;
    -o-transition: 0.4s ease-in-out;
    transition: 0.4s ease-in-out;
    border-radius: 30px;
-   color: white;
-   box-shadow: inset 0 -5px 0 #ababab;
-
+   color: black;
+   text-decoration: none;
+   box-shadow: inset 0 -5px 0 #D76E00;
 }
 
 .btn a:hover {
-   box-shadow: inset 0 -70px 0 white, 1px 1px 6px rgba(0, 0, 0, 0.3);
+   box-shadow: inset 0 -90px 0 white, 1px 1px 6px rgba(0, 0, 0, 0.3);
+   background-color: #DCDCDC;
    color: black;
 }
 /* [/Buttons] */
 
-/* [Buttons] */
-.menu a{
-   display: inline-block;
-   text-decoration: none;
-   text-transform: uppercase;
-   letter-spacing: 0.5px;
-   margin: 10px 25px;
-   padding: 8px 17px;
-   font-size: 14px;
-   font-family: 'Montserrat', sans-serif;
-   -webkit-transition: 0.2s ease-in-out;
-   -o-transition: 0.2s ease-in-out;
-   transition: 0.2s ease-in-out;
-   border-radius: 10px;
-   color: white;
-   box-shadow: inset 0 -2px 0 #ababab;
-
+@-webkit-keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
 }
 
-.menu a:hover {
-   box-shadow: inset 0 -90px 0 white, 1px 1px 6px rgba(0, 0, 0, 0.5);
-   color: black;
+@-moz-keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
 }
-/* [/Buttons] */
 
+@keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
+}
 
 body{
-   text-shadow: 0px 0px 27px #0000ff;
-   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-   background: no-repeat url("../res/main_bg.gif");
-   background-color: black;
+   cursor: default;
+   font-family: 'Montserrat', sans-serif;
+   /* background: no-repeat url("../res/main_bg.gif"); */
+   background-color: #08080d;
    color: white;
    -moz-background-size: 100%; /* Firefox 3.6+ */
    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -121,54 +126,56 @@ body{
    background-size: 100%; /* Современные браузеры */
 }
 
-p {
-   font-family: Verdana, Arial, Helvetica, sans-serif; 
-   font-size: 13pt; /* Размер шрифта в пунктах */ 
-}
-
-#subtitle{
-   text-shadow: 5px 0px 17px #9202eb;
-   font-size: 19px;
-}
-
-.content{
-   text-shadow: 5px 0px 15px #fc8894;
-   text-align: center;	
+h3{
+   color: #a7a9be;
 }
 
 #title{
-   float: top;
-   margin:0px 15% 0px 15%;
+   min-height: 400px;
+   width: 100%;
 }
 
-.stat{
-   position: relative;
-   margin:10% 0px 0px 0px;
+strong{
+   color:#ff8906;
 }
 
-.V a{
+.open-on-hover a{
+   background-color: black;
    display: inline-block;
    text-decoration: none;
    text-transform: uppercase;
    letter-spacing: 1px;
-   margin: 15px 25px;
    padding: 15px 20px;
-   font-size: 15px;
    font-weight: bold;
+   font-size: calc(0.8rem + 1vmax);
    font-family: 'Montserrat', sans-serif;
    -webkit-transition: 0.4s ease-in-out;
    -o-transition: 0.4s ease-in-out;
    transition: 0.4s ease-in-out;
    border-radius: 10px;
-   color: white;
-   box-shadow: inset 0 -5px 0 #ababab;
+   color: #fffffe;
+   background-color: #ff8906;
+   box-shadow: inset 0 -2px 0 #D76E00;
    text-align: center;
    margin: 0p 0px 0px 300px;
 }
 
-.V a:hover {
-   box-shadow: inset 0 -70px 0 white, 1px 1px 6px rgba(0, 0, 0, 0.3);
-   color: black;
+.open-on-hover a:hover {
+   box-shadow: inset 0 -90px 0 white, 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
 
+.secondary-button a{
+   padding: 10px 15px;
+   font-size: calc(0.4rem + 1vmax);
+   color: #fffffe;
+   background-color: #000;
+}
 
+footer{
+   min-height: 100px;
+   background-color: black;
+}
+
+.background-light{
+   background: linear-gradient(180deg, #08080d, #000000);
 }
