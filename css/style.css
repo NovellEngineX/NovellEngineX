@@ -179,3 +179,13 @@ footer{
 .background-light{
    background: linear-gradient(180deg, #08080d, #000000);
 }
+
+a.select {
+   text-decoration: none;
+   color: #949494;
+}
+
+a.select:hover {
+  text-decoration: underline;
+  color: #bdbdbd;
+}
